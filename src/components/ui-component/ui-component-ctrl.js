@@ -21,6 +21,11 @@ angular.module('ui').controller('uiComponentController', ['UiEvents', '$interpol
                         me.valueChanged(0);
                     };
                     break;
+
+                case 'table':
+                    me.rowClick = function (row) {
+                    };
+                    break;
                     
                 case 'numeric':
                     var changeValue = function(delta) {
